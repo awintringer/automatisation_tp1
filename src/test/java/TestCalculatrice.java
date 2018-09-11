@@ -82,9 +82,9 @@ public class TestCalculatrice
     @Test
     public void testCombine()
     {
-        arg1 = 1;
-        arg2 = -1;
-        arg3 = 10;
+        int arg1 = 1;
+        int arg2 = -1;
+        int arg3 = 10;
 
         int expectedResult = 12;
         int result = Calculatrice.add(Calculatrice.substract(arg1, arg2), arg3);
