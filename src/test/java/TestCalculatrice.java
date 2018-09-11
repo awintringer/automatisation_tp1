@@ -54,7 +54,7 @@ public class TestCalculatrice
     {
         int arg1 = -1;
         int arg2 = -1;
-        int expectedResult = -2;
+        int expectedResult = 0;
 
         int result = Calculatrice.substract(arg1, arg2);
 
