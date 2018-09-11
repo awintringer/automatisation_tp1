@@ -78,4 +78,17 @@ public class TestCalculatrice
 
         int result = Calculatrice.substract(arg1, arg2);
     }
+
+    @Test
+    public void testCombine()
+    {
+        arg1 = 1;
+        arg2 = -1;
+        arg3 = 10;
+
+        int expectedResult = 12;
+        int result = Calculatrice.add(Calculatrice.substract(arg1, arg2), arg3);
+
+        Assert.assertEquals(result, expectedResult);
+    }
 }
