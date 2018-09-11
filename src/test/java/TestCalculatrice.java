@@ -38,11 +38,23 @@ public class TestCalculatrice
     }
 
     @Test
-    public void subTest1moins1()
+    public void subTestEgalPositif()
     {
         int arg1 = 1;
         int arg2 = 1;
         int expectedResult = 0;
+
+        int result = Calculatrice.substract(arg1, arg2);
+
+        Assert.assertEquals(result, expectedResult);
+    }
+
+    @Test
+    public void subTestEgalNegatif()
+    {
+        int arg1 = -1;
+        int arg2 = -1;
+        int expectedResult = -2;
 
         int result = Calculatrice.substract(arg1, arg2);
 
